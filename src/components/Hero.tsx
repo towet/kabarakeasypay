@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="mb-6 animate-fade-in">
