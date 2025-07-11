@@ -58,7 +58,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="flex flex-col gap-8 mb-16 lg:grid lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={service.title}

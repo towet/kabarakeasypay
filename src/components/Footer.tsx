@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-primary to-primary-light text-white">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="animate-fade-in">
             <div className="flex items-center gap-3 mb-6">
@@ -120,7 +120,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
           <p className="text-white/80 text-sm">
             © 2024 Kabarak EasyPay. All rights reserved. | Powered by Kabarak University
           </p>

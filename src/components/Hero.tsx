@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="mb-6 animate-fade-in">
@@ -24,7 +24,7 @@ const Hero = () => {
               </span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Welcome to{' '}
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                 Kabarak EasyPay
