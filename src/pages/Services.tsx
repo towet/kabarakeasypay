@@ -435,7 +435,7 @@ const Services = () => {
                         </h3>
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="flex flex-col gap-y-3 md:grid md:grid-cols-2 md:gap-4">
                         {(selectedService === "fees" ? feeOptions : 
                           selectedService === "cafeteria" ? cafeteriaOptions : 
                           hostelOptions).map((item, index) => (
@@ -574,10 +574,10 @@ const Services = () => {
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.9, y: 20 }}
                           transition={{ duration: 0.3 }}
-                          className="relative w-full max-w-4xl"
+                          className="relative w-full max-w-xs sm:max-w-2xl md:max-w-4xl mx-auto rounded-xl overflow-y-auto p-2 sm:p-3"
                           onClick={(e) => e.stopPropagation()}
                         >
-                          <Card className="bg-gray-50 border-2 border-dashed border-gray-300">
+                          <Card className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl">
                             <CardContent className="p-8">
                               <div className="flex items-center gap-4 mb-6">
                                 <motion.div 
@@ -589,7 +589,7 @@ const Services = () => {
                                 <h3 className="text-3xl font-bold text-gray-900">Payment Summary</h3>
                               </div>
                               
-                              <div className="grid md:grid-cols-2 gap-8">
+                              <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-8">
                                 <div>
                                   <h4 className="font-bold text-xl text-gray-900 mb-4">Selected Items</h4>
                                   <div className="space-y-3">
@@ -687,7 +687,7 @@ const Services = () => {
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.9, y: 20 }}
                           transition={{ duration: 0.3 }}
-                          className="relative w-full max-w-md"
+                          className="relative w-full max-w-xs sm:max-w-md mx-auto rounded-xl overflow-y-auto p-2 sm:p-3"
                           onClick={(e) => e.stopPropagation()}
                         >
                           <motion.div
@@ -1243,7 +1243,7 @@ const Services = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-md"
+              className="relative w-full max-w-xs sm:max-w-md mx-auto"
               onClick={e => e.stopPropagation()}
             >
               <Card className="bg-white border-green-500 border-2 shadow-2xl">
@@ -1305,7 +1305,7 @@ const ServiceCard = ({ icon, title, description, color, features, image, onClick
       className="cursor-pointer"
       onClick={onClick}
     >
-      <Card className="group relative overflow-hidden bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 h-full">
+      <Card className="group relative overflow-hidden bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-500 h-full w-full max-w-xs mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
         <div className="relative overflow-hidden h-48">
           <img 
             src={image} 
@@ -1366,7 +1366,7 @@ const ServiceCard = ({ icon, title, description, color, features, image, onClick
             whileTap={{ scale: 0.95 }}
           >
             <Button 
-              className={`w-full bg-gradient-to-r ${color} hover:shadow-lg text-white font-semibold py-3 rounded-xl transition-all duration-300`}
+              className={`w-full bg-gradient-to-r ${color} hover:shadow-lg text-white font-semibold py-3 rounded-xl transition-all duration-300 text-base sm:text-lg`}
             >
               Get Started
               <motion.div
